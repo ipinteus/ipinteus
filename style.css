@@ -1,6 +1,6 @@
 /* General Body Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Monaco, monospace;
     background: url('images/background.jpg') no-repeat center center fixed;
     background-size: cover;
     margin: 0;
