@@ -1,3 +1,4 @@
+/* General Body Styles */
 body {
     font-family: Arial, sans-serif;
     background: url('images/background.jpg') no-repeat center center fixed;
@@ -8,14 +9,9 @@ body {
     height: 100vh; /* Ensures full height coverage */
 }
 
-@media (max-width: 768px) { /* Mobile devices */
-    body {
-        background-position: top center; /* Optional: Change the image focus on smaller screens */
-    }
-}
-
+/* Header Styles */
 header {
-    background: #333;
+    background: rgba(51, 51, 51, 0.8); /* Slight transparency for the background */
     color: white;
     padding: 10px 0;
 }
@@ -35,10 +31,15 @@ nav ul li a {
     text-decoration: none;
 }
 
+/* Main Content Styles */
 main {
     padding: 20px;
+    background: rgba(255, 255, 255, 0.8); /* Slight transparency for the content background */
+    border-radius: 10px;
+    margin-top: 20px;
 }
 
+/* Character Card Styles */
 .character {
     display: inline-block;
     width: 250px;
@@ -55,11 +56,27 @@ main {
     border-radius: 5px;
 }
 
+/* Footer Styles */
 footer {
-    background: #333;
+    background: rgba(51, 51, 51, 0.8);
     color: white;
     padding: 10px 0;
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+/* Mobile Specific Adjustments */
+@media (max-width: 768px) { /* Mobile devices */
+    body {
+        background-position: top center; /* Optional: Change the image focus on smaller screens */
+    }
+    
+    main {
+        padding: 10px; /* Reduced padding for smaller screens */
+    }
+    
+    .character {
+        width: 80%; /* Adjust the character card width for smaller screens */
+    }
 }
