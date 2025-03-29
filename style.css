@@ -1,9 +1,17 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover; /* Ensures the image covers the entire screen */
     margin: 0;
     padding: 0;
     text-align: center;
+    height: 100vh; /* Ensures full height coverage */
+}
+
+@media (max-width: 768px) { /* Mobile devices */
+    body {
+        background-position: top center; /* Optional: Change the image focus on smaller screens */
+    }
 }
 
 header {
