@@ -2,11 +2,13 @@
 body {
     font-family: Arial, sans-serif;
     background: url('images/background.jpg') no-repeat center center fixed;
-    background-size: cover; /* Ensures the image covers the entire screen */
+    background-size: cover;
     margin: 0;
     padding: 0;
     text-align: center;
-    height: 100vh; /* Ensures full height coverage */
+    height: 100vh;
+    display: flex;
+    flex-direction: column; /* Makes the body a flex container */
 }
 
 /* Header Styles */
@@ -33,8 +35,9 @@ nav ul li a {
 
 /* Main Content Styles */
 main {
+    flex: 1; /* Allows the main content to take up available space */
     padding: 20px;
-    background: rgba(255, 255, 255, 0.8); /* Slight transparency for the content background */
+    background: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
     margin-top: 20px;
 }
@@ -60,10 +63,10 @@ main {
 footer {
     background: rgba(51, 51, 51, 0.8);
     color: white;
-    padding: 5px 0; /* Reduced padding to make the footer smaller */
-    position: relative; /* Changed from fixed to relative positioning */
+    padding: 5px 0;
     width: 100%;
-    text-align: center; /* Center the footer text */
+    text-align: center;
+    margin-top: auto; /* Pushes the footer to the bottom of the screen */
 }
 
 /* Mobile Specific Adjustments */
