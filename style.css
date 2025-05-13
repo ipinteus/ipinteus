@@ -72,7 +72,8 @@ ul li:first-child {
 
 ul.specialization {
     margin-top: 0.2rem;
-    margin-left: 1.5rem;
+    margin-left: 1.5rem; /* distance from parent li */
+    padding-left: 1rem;  /* shift the bullet itself to the right */
     font-size: 0.9rem;
     list-style-type: disc;
     color: #555;
