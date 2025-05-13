@@ -43,6 +43,8 @@ h2 {
     border-bottom: 2px solid #999;
     padding-bottom: 0.3rem;
     color: #222;
+    text-align: left;  /* Align header to the left */
+    margin-bottom: 1rem;  /* Space between header and content */
 }
 
 h3 {
@@ -80,16 +82,16 @@ footer {
     border-top: 2px solid #222;
 }
 
-/* Attributes Layout - 3 columns */
+/* Attribute Layout */
 .attributes {
     display: flex;
-    justify-content: space-between;
-    gap: 1.5rem;
+    gap: 2rem;
     flex-wrap: wrap;
 }
 
 .attributes .attribute-group {
-    width: 32%; /* Ensure 3 columns */
+    width: 32%; /* Allow 3 groups to fit */
+    padding: 0;
 }
 
 .attributes .attribute-group h3 {
@@ -105,8 +107,9 @@ footer {
 
 .attributes .attribute-group ul li {
     font-weight: normal; /* Ensure items aren't bold unless specified */
+}
 
-/* Character Image Layout - Fix Horizontal Layout & Image Size */
+/* Character Image Layout */
 .character-images {
     display: flex;
     justify-content: space-between;
@@ -115,7 +118,7 @@ footer {
 }
 
 .character-image {
-    max-width: 30%; /* Set images to 30% of the container width */
+    max-width: 30%; /* Restrict image width */
     height: auto;
     border-radius: 8px; /* Optional: for rounded corners */
 }
