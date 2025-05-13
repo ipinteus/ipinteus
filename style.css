@@ -84,7 +84,7 @@ footer {
 
 /* Attribute Layout */
 .attributes {
-    text-align: left;  /* Center the header */
+    text-align: left;  /* Align content to the left */
     margin-bottom: 2rem;  /* Space between header and content */
 }
 
@@ -125,6 +125,90 @@ footer {
     text-indent: 0;
 }
 
+/* Skills Layout - 2 columns (Active Skills and Knowledge Skills) */
+.skills {
+    margin-bottom: 2rem;  /* Space between header and content */
+}
+
+.skills h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: left;  /* Align header to the left */
+    margin-bottom: 1rem;
+}
+
+.skills .skills-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    gap: 2rem;
+    padding: 0;
+}
+
+.skills .skills-column {
+    padding: 0;
+}
+
+/* Subheaders inside each skills column */
+.skills .skills-column h3 {
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+/* List Formatting for the skills columns */
+.skills .skills-column ul {
+    padding: 0;
+    margin: 0;
+}
+
+.skills .skills-column ul li {
+    margin-left: 0;
+    text-indent: 0;
+}
+
+/* Qualities Layout - 2 columns (Edges and Flaws) */
+.qualities {
+    margin-bottom: 2rem;  /* Space between header and content */
+}
+
+.qualities h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: left;  /* Align header to the left */
+    margin-bottom: 1rem;
+}
+
+.qualities .qualities-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    gap: 2rem;
+    padding: 0;
+}
+
+.qualities .qualities-column {
+    padding: 0;
+}
+
+/* Subheaders inside each qualities column */
+.qualities .qualities-column h3 {
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+/* List Formatting for the qualities columns */
+.qualities .qualities-column ul {
+    padding: 0;
+    margin: 0;
+}
+
+.qualities .qualities-column ul li {
+    margin-left: 0;
+    text-indent: 0;
+}
+
 /* Character Image Layout */
 .character-images {
     display: flex;
@@ -137,30 +221,4 @@ footer {
     max-width: 30%; /* Restrict image width */
     height: auto;
     border-radius: 8px; /* Optional: for rounded corners */
-}
-
-/* Skills Layout - 2 columns */
-.skills .skills-group {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* 2 columns */
-    gap: 1.5rem;
-    padding: 0;
-}
-
-.skills .skills-group ul {
-    padding: 0;
-    margin: 0;
-}
-
-/* Qualities Layout - 2 columns */
-.qualities .qualities-group {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* 2 columns */
-    gap: 1.5rem;
-    padding: 0;
-}
-
-.qualities .qualities-group ul {
-    padding: 0;
-    margin: 0;
 }
