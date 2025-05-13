@@ -95,6 +95,12 @@ footer {
     width: 30%;
 }
 
+.attributes .attribute-group h3 {
+    margin: 0; /* Fix extra space before attribute name */
+    font-weight: normal; /* Ensure it's not bold */
+    color: #222;
+}
+
 .attributes .attribute-group ul {
     padding: 0;
     margin: 0;
@@ -103,6 +109,19 @@ footer {
 .attributes .attribute-group ul li {
     margin-left: 0;
     text-indent: 0;
+}
+
+/* Image Styling - Fix Horizontal Layout & Image Size */
+.character-images {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.character-image {
+    max-width: 30%; /* Ensure the images don't overflow */
+    height: auto;
+    border-radius: 8px; /* Optional: for rounded corners */
 }
 
 /* Skills Layout - 2 columns */
