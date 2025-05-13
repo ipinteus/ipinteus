@@ -184,25 +184,51 @@ footer {
 }
 
 /* Columns for Attributes, Skills, Qualities */
-.attributes ul,
-.skills ul,
-.qualities ul {
+
+/* Attributes Columns: 3 Columns Layout */
+.attributes ul {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr 1fr; /* 3 equal columns */
     gap: 1.5rem;
     padding: 0;
     margin: 0;
 }
 
+.attributes ul li:nth-child(1), 
+.attributes ul li:nth-child(2), 
+.attributes ul li:nth-child(3), 
+.attributes ul li:nth-child(4) {
+    grid-column: 1;
+}
+
+.attributes ul li:nth-child(5), 
+.attributes ul li:nth-child(6), 
+.attributes ul li:nth-child(7), 
+.attributes ul li:nth-child(8) {
+    grid-column: 2;
+}
+
+.attributes ul li:nth-child(9),
+.attributes ul li:nth-child(10),
+.attributes ul li:nth-child(11),
+.attributes ul li:nth-child(12) {
+    grid-column: 3;
+}
+
+/* Skills Columns: Active Skills (Left), Knowledge Skills (Right) */
 .skills ul {
-    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 columns */
+    gap: 1.5rem;
+    padding: 0;
+    margin: 0;
 }
 
+/* Qualities Columns: Edges (Left), Flaws (Right) */
 .qualities ul {
-    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 columns */
+    gap: 1.5rem;
+    padding: 0;
+    margin: 0;
 }
-
-.qualities ul li {
-    font-weight: normal; /* Keep flaws/edges without bold unless needed */
-}
-
