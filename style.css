@@ -84,12 +84,12 @@ footer {
 
 /* Attribute Layout */
 .attributes {
-    text-align: center;  /* Center the header */
+    text-align: left;  /* Center the header */
     margin-bottom: 2rem;  /* Space between header and content */
 }
 
 .attributes h2 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: bold;
     text-align: left;
     margin-bottom: 1rem;
