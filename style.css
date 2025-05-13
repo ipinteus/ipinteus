@@ -189,21 +189,21 @@ footer {
 .attributes ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; /* 3 equal columns */
-    gap: 1.5rem;
+    gap: 1rem;
     padding: 0;
     margin: 0;
 }
 
-.attributes ul li:nth-child(1), 
-.attributes ul li:nth-child(2), 
-.attributes ul li:nth-child(3), 
+.attributes ul li:nth-child(1),
+.attributes ul li:nth-child(2),
+.attributes ul li:nth-child(3),
 .attributes ul li:nth-child(4) {
     grid-column: 1;
 }
 
-.attributes ul li:nth-child(5), 
-.attributes ul li:nth-child(6), 
-.attributes ul li:nth-child(7), 
+.attributes ul li:nth-child(5),
+.attributes ul li:nth-child(6),
+.attributes ul li:nth-child(7),
 .attributes ul li:nth-child(8) {
     grid-column: 2;
 }
@@ -224,6 +224,14 @@ footer {
     margin: 0;
 }
 
+.skills ul li:nth-child(-n+10) { /* Active skills (1st to 10th) */
+    grid-column: 1;
+}
+
+.skills ul li:nth-child(n+11) { /* Knowledge skills (11th onwards) */
+    grid-column: 2;
+}
+
 /* Qualities Columns: Edges (Left), Flaws (Right) */
 .qualities ul {
     display: grid;
@@ -231,4 +239,12 @@ footer {
     gap: 1.5rem;
     padding: 0;
     margin: 0;
+}
+
+.qualities ul li:nth-child(-n+5) { /* Edges (1st to 5th) */
+    grid-column: 1;
+}
+
+.qualities ul li:nth-child(n+6) { /* Flaws (6th onwards) */
+    grid-column: 2;
 }
