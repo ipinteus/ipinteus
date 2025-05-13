@@ -81,11 +81,18 @@ footer {
 }
 
 /* Attributes Layout - 3 columns */
+.attributes {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
 .attributes .attribute-group {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /* 3 columns */
+    grid-template-columns: 1fr;
     gap: 1rem;
     padding: 0;
+    width: 30%;
 }
 
 .attributes .attribute-group ul {
