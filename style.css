@@ -84,29 +84,45 @@ footer {
 
 /* Attribute Layout */
 .attributes {
-    display: flex;
-    gap: 2rem;
-    flex-wrap: wrap;
+    text-align: center;  /* Center the header */
+    margin-bottom: 2rem;  /* Space between header and content */
+}
+
+.attributes h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
 }
 
 .attributes .attribute-group {
-    width: 32%; /* Allow 3 groups to fit */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Three equal columns */
+    gap: 2rem;
     padding: 0;
 }
 
-.attributes .attribute-group h3 {
-    margin: 0;
-    font-weight: normal; /* No bold for the subgroup name */
-    color: #222;
+.attributes .attribute-column {
+    padding: 0;
 }
 
-.attributes .attribute-group ul {
+/* Subheaders inside each attribute column */
+.attributes .attribute-column h3 {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+/* List Formatting for the attribute columns */
+.attributes .attribute-column ul {
     padding: 0;
     margin: 0;
 }
 
-.attributes .attribute-group ul li {
-    font-weight: normal; /* Ensure items aren't bold unless specified */
+.attributes .attribute-column ul li {
+    margin-left: 0;
+    text-indent: 0;
 }
 
 /* Character Image Layout */
