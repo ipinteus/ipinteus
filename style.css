@@ -108,7 +108,7 @@ footer {
 
 /* Subheaders inside each attribute column */
 .attributes .attribute-column h3 {
-    text-align: center;
+    text-align: left;
     font-size: 1.2rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
