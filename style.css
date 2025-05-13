@@ -9,7 +9,6 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    color: #222;
 }
 
 /* Header Styles */
@@ -18,28 +17,6 @@ header {
     color: white;
     padding: 15px 0;
     border-bottom: 2px solid #222;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.2s ease-in-out;
-}
-
-nav ul li a:hover {
-    color: #ffcc00;
 }
 
 /* Main Content Styles */
@@ -53,22 +30,6 @@ main {
     text-align: left;
     line-height: 1.6;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-}
-
-/* Character Image Row */
-.character-images {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin-bottom: 2rem;
-}
-
-.character-image {
-    width: 250px;
-    height: 250px;
-    object-fit: contain;
-    background: transparent;
 }
 
 /* Section Layout */
@@ -85,21 +46,17 @@ h2 {
 }
 
 h3 {
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
     font-size: 1.2rem;
+    margin-top: 1rem;
     color: #444;
+    font-weight: bold;
 }
 
-/* Paragraph and List Formatting */
-p {
-    margin-left: 1rem;
-}
-
+/* List Formatting */
 ul {
     list-style: none;
     padding-left: 0;
-    margin-left: 1rem;
+    margin-left: 0;
 }
 
 ul li {
@@ -109,36 +66,6 @@ ul li {
 
 ul li:first-child {
     font-weight: bold;
-}
-
-/* Character Grid Container */
-.character-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    justify-items: center;
-    margin-top: 20px;
-}
-
-/* Character Card Styles */
-.character {
-    background: white;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 250px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
-}
-
-.character img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    margin-bottom: 10px;
 }
 
 /* Footer Styles */
@@ -153,98 +80,46 @@ footer {
     border-top: 2px solid #222;
 }
 
-/* Mobile Specific Adjustments */
-@media (max-width: 768px) {
-    body {
-        background-position: top center;
-    }
-
-    main {
-        padding: 15px 10px;
-    }
-
-    .character {
-        width: 90%;
-    }
-
-    .character-images {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .character-image {
-        width: 180px;
-        height: 180px;
-    }
-
-    /* Grid layout fixes for mobile */
-    .attributes ul, .skills ul, .qualities ul {
-        display: block;
-    }
-}
-
-/* Columns for Attributes, Skills, Qualities */
-
-/* Attributes Columns: 3 Columns Layout */
-.attributes ul {
+/* Attributes Layout - 3 columns */
+.attributes .attribute-group {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /* 3 equal columns */
+    grid-template-columns: 1fr 1fr 1fr; /* 3 columns */
     gap: 1rem;
     padding: 0;
-    margin: 0;
 }
 
-.attributes ul li:nth-child(1),
-.attributes ul li:nth-child(2),
-.attributes ul li:nth-child(3),
-.attributes ul li:nth-child(4) {
-    grid-column: 1;
-}
-
-.attributes ul li:nth-child(5),
-.attributes ul li:nth-child(6),
-.attributes ul li:nth-child(7),
-.attributes ul li:nth-child(8) {
-    grid-column: 2;
-}
-
-.attributes ul li:nth-child(9),
-.attributes ul li:nth-child(10),
-.attributes ul li:nth-child(11),
-.attributes ul li:nth-child(12) {
-    grid-column: 3;
-}
-
-/* Skills Columns: Active Skills (Left), Knowledge Skills (Right) */
-.skills ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* 2 columns */
-    gap: 1.5rem;
+.attributes .attribute-group ul {
     padding: 0;
     margin: 0;
 }
 
-.skills ul li:nth-child(-n+10) { /* Active skills (1st to 10th) */
-    grid-column: 1;
+.attributes .attribute-group ul li {
+    margin-left: 0;
+    text-indent: 0;
 }
 
-.skills ul li:nth-child(n+11) { /* Knowledge skills (11th onwards) */
-    grid-column: 2;
-}
-
-/* Qualities Columns: Edges (Left), Flaws (Right) */
-.qualities ul {
+/* Skills Layout - 2 columns */
+.skills .skills-group {
     display: grid;
     grid-template-columns: 1fr 1fr; /* 2 columns */
     gap: 1.5rem;
     padding: 0;
+}
+
+.skills .skills-group ul {
+    padding: 0;
     margin: 0;
 }
 
-.qualities ul li:nth-child(-n+5) { /* Edges (1st to 5th) */
-    grid-column: 1;
+/* Qualities Layout - 2 columns */
+.qualities .qualities-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 columns */
+    gap: 1.5rem;
+    padding: 0;
 }
 
-.qualities ul li:nth-child(n+6) { /* Flaws (6th onwards) */
-    grid-column: 2;
+.qualities .qualities-group ul {
+    padding: 0;
+    margin: 0;
 }
