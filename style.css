@@ -1,8 +1,7 @@
 /* General Body Styles */
 body {
     font-family: Monaco, monospace;
-    background-color: yellow
-    !background: url('images/background.jpg') no-repeat center center fixed;
+    background: url('images/background.jpg') no-repeat center center fixed;
     background-size: cover;
     margin: 0;
     padding: 0;
