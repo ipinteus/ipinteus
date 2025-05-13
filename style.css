@@ -56,11 +56,12 @@ main {
 }
 
 .character-image {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 8px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+    border-radius: 0; /* Let the PNG transparency do the work */
+    box-shadow: none;
+    background: transparent;
 }
 
 /* Section Layout */
