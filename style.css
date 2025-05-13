@@ -2,6 +2,7 @@
 body {
     font-family: Monaco, monospace;
     background: url('images/background.jpg') no-repeat center center fixed;
+    background-color: yellow !important; /* This should turn the page yellow */
     background-size: cover;
     margin: 0;
     padding: 0;
