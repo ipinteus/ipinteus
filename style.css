@@ -77,4 +77,71 @@ footer {
     text-align: center;
     font-size: 0.9rem;
     margin-top: auto;
-    border-top: 2px
+    border-top: 2px solid #222;
+}
+
+/* Attributes Layout - 3 columns */
+.attributes {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.attributes .attribute-group {
+    width: 32%; /* Ensure 3 columns */
+}
+
+.attributes .attribute-group h3 {
+    margin: 0;
+    font-weight: normal; /* No bold for the subgroup name */
+    color: #222;
+}
+
+.attributes .attribute-group ul {
+    padding: 0;
+    margin: 0;
+}
+
+.attributes .attribute-group ul li {
+    font-weight: normal; /* Ensure items aren't bold unless specified */
+
+/* Character Image Layout - Fix Horizontal Layout & Image Size */
+.character-images {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.character-image {
+    max-width: 30%; /* Set images to 30% of the container width */
+    height: auto;
+    border-radius: 8px; /* Optional: for rounded corners */
+}
+
+/* Skills Layout - 2 columns */
+.skills .skills-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 columns */
+    gap: 1.5rem;
+    padding: 0;
+}
+
+.skills .skills-group ul {
+    padding: 0;
+    margin: 0;
+}
+
+/* Qualities Layout - 2 columns */
+.qualities .qualities-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 columns */
+    gap: 1.5rem;
+    padding: 0;
+}
+
+.qualities .qualities-group ul {
+    padding: 0;
+    margin: 0;
+}
