@@ -79,6 +79,14 @@ ul.specialization {
     color: #555;
 }
 
+/* Override for Skills section only – handles weird nesting quirks */
+.skills li > ul.specialization {
+    padding-left: 1.5rem; /* or more if needed */
+    font-size: 0.9rem;
+    list-style-type: circle;
+    margin-top: 0.2rem;
+}
+
 ul.specialization li {
     margin: 0;
     padding: 0;
