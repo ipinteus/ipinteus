@@ -274,6 +274,27 @@ footer {
     margin-right: 0.4rem;
 }
 
+.contact-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.contact-entry {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.contact-img {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+}
+
 /* Character Image Layout */
 .character-images {
     display: flex;
