@@ -288,8 +288,8 @@ footer {
 }
 
 .contact-img {
-    width: 48px;
-    height: 48px;
+    width: 180px;
+    height: 180px;
     object-fit: cover;
     border-radius: 6px;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
