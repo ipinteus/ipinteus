@@ -189,6 +189,20 @@ footer {
     text-indent: 0;
 }
 
+.specialization {
+    margin-left: 1.2rem;
+    font-size: 0.9rem;
+    font-style: italic;
+    color: #555;
+}
+
+.specialization::before {
+    content: "• ";
+    font-size: 0.8rem;
+    color: #999;
+    margin-right: 0.4rem;
+}
+
 /* Qualities Layout - 2 columns (Edges and Flaws) */
 .qualities {
     margin-bottom: 2rem;  /* Space between header and content */
