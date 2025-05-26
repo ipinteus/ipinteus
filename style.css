@@ -247,6 +247,17 @@ footer {
     text-indent: 0;
 }
 
+/* Assets spacing between items */
+.assets ul li {
+    margin-bottom: 1rem; /* Space between each main asset */
+}
+
+/* Tighter spacing between asset and its subdetail */
+.assets ul li .asset-detail {
+    margin-top: -0.4rem;  /* Pull it closer to the item */
+    margin-bottom: 0;
+}
+
 .asset-detail {
     margin-top: -0.4rem;
     margin-left: 1.6rem;
