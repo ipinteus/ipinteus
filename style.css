@@ -282,9 +282,9 @@ footer {
 
 .contact-entry {
     display: flex;
-    align-items: center;
-    gap: 0.8rem;
-    margin-bottom: 1rem;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 .contact-img {
