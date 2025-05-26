@@ -187,10 +187,12 @@ footer {
 .skills .skills-column ul li {
     margin-left: 0;
     text-indent: 0;
+    margin-bottom: 1rem; /* More space between skills */
 }
 
 .specialization {
-    margin-left: 1.2rem;
+    margin-left: 1.6rem;   /* Indent under parent skill */
+    margin-top: -0.4rem;   /* Pull it closer to the skill */
     font-size: 0.9rem;
     font-style: italic;
     color: #555;
