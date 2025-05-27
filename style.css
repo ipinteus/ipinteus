@@ -287,6 +287,11 @@ footer {
     margin-bottom: 2rem;
 }
 
+.contact-entry span {
+    font-size: 1.1rem;
+    line-height: 1.4;
+}
+
 .contact-img {
     width: 240px;
     height: 240px;
